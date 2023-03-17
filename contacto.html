@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello world!!</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="stylesBootstrap.css" />
+    <link rel="stylesheet" href="spinner.css">
+    <style>
+      .toast {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form id="formulario" class="container w-50 mt-5 mb-5">
+      <fieldset>
+        <legend>Contacto</legend>
+
+        <div class="form-group">
+          <label for="email" class="form-label mt-4">Email address</label>
+          <input
+            id="email"
+            class="form-control"
+            type="email"
+            name="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            required />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="asunto" class="form-label mt-4">Asunto</label>
+          <input
+            id="asunto"
+            class="form-control"
+            type="text"
+            name="asunto"
+            placeholder="Asunto"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label for="textarea" class="form-label mt-4">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="textarea"
+            name="mensaje"
+            rows="3"></textarea>
+        </div>
+
+        <fieldset class="form-group">
+          <legend class="mt-4">Termininos y condiciones</legend>
+          <div class="form-check">
+            <input
+              id="checkbox"
+              class="form-check-input"
+              type="checkBox"
+              name="checkCampo"
+              id="flexCheckDefault" />
+            <label class="form-check-label" for="checkbox"> Acepta </label>
+          </div>
+        </fieldset>
+
+        <div id="btn" class="d-flex justify-content-around ">
+          <button
+            id="btnSend"
+            type="submit"
+            class="btn btn-primary mt-5 w-25"
+            disabled
+            >
+            Send
+          </button>
+
+          <button id="btnReset" type="reset" class="btn btn-warning mt-5 w-25">
+            Reset
+          </button>
+        </div>
+      </fieldset>
+    </form>
+
+      <!-- Spinner -->
+    <div id="spinner" class="d-flex justify-content-center position-relative spinner visually-hidden">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
